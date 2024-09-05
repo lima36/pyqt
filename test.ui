@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="PythonConsoleWidget" name="consoleWidget">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>280</y>
+      <width>531</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Python console</string>
+    </property>
+    <property name="whatsThis">
+     <string>The Python console widget can be used to explore Qt Designer.</string>
+    </property>
+   </widget>
+   <widget class="PyDemo" name="pyDemo">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>571</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>PyQt demonstration widget</string>
+    </property>
+    <property name="whatsThis">
+     <string>PyDemo is a demonstration custom widget written in Python using PyQt.</string>
+    </property>
+   </widget>
+   <widget class="PolygonWidget" name="polygonWidget">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>380</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="PyAnalogClock" name="analogClock">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>330</y>
+      <width>201</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>The current time</string>
+    </property>
+    <property name="whatsThis">
+     <string>The analog clock widget displays the current time.</string>
+    </property>
+   </widget>
+   <widget class="PyMultiPageWidget" name="multipagewidget">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>340</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="page"/>
+   </widget>
+   <widget class="PyDateEdit" name="pyDateEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>122</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWebEngineView" name="webEngineView">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>120</y>
+      <width>300</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>about:blank</string>
+     </url>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyAnalogClock</class>
+   <extends>QWidget</extends>
+   <header>analogclock</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDateEdit</class>
+   <extends>QDateEdit</extends>
+   <header>datetimeedit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyMultiPageWidget</class>
+   <extends>QWidget</extends>
+   <header>multipagewidget</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PolygonWidget</class>
+   <extends>QWidget</extends>
+   <header>polygonwidget</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDemo</class>
+   <extends>QTextEdit</extends>
+   <header>pydemo</header>
+  </customwidget>
+  <customwidget>
+   <class>PythonConsoleWidget</class>
+   <extends>QLineEdit</extends>
+   <header>pythonconsolewidget</header>
+  </customwidget>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
